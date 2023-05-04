@@ -11,7 +11,7 @@
         <div class = "first">
         <h2>Original RPS</h2>
         <label class="switch">
-            <input id ="OG" type="checkbox" onChange="toggle()">
+            <input type="checkbox" onChange="toggleOG()">
             <span class="slider"></span>
         </label>
         </div>
@@ -19,48 +19,37 @@
         <div>
         <h2>New RPSLS</h2>
         <label class="switch">
-            <input id = "NEW" type="checkbox" onChange="toggle()">
+            <input type="checkbox" onChange="toggleNew()">
             <span class="slider"></span>
         </label>
         </div>
         </div>
         
-        <div></div>
-
-        <div></div>
+        <div class="againstButton"> 
+        <div class="againstOpponent">
         <h2>Against Opponent?</h2>
         <label class="switch">
-            <input type="checkbox">
+            <input type="checkbox" onChange="toggle_against_opponent()">
             <span class="slider"></span>
         </label>    
+        </div>
+        </div>
 
-        <div id="ogRPS">
+        <div class="ogRPS">
         <form action="/action_page.php">
             <label for="shot">Choose a Shot:</label>
             <select name="shot" id="shot">
               <option value="rock">ROCK</option>
               <option value="paper">PAPER</option>
               <option value="scissors">SCISSORS</option>
+              <option value="lizard" class="rpsls">LIZARD</option>
+              <option value="spock" class="rpsls">SPOCK</option>
             </select>
             <br><br>
             <input type="submit" value="Submit">
         </form>
         </div>
 
-        <div id="RPSLS">
-            <form action="/action_page.php">
-                <label for="shot">Choose a Shot:</label>
-                <select name="shot" id="shot">
-                  <option value="rock">ROCK</option>
-                  <option value="paper">PAPER</option>
-                  <option value="scissors">SCISSORS</option>
-                  <option value="lizard">LIZARD</option>
-                  <option value="spock">SPOCK</option>
-                </select>
-                <br><br>
-                <input type="submit" value="Submit">
-            </form>
-        </div>
     <!-- Your interface markup goes here -->
     <!-- For interface examples, look in the `/examples/` directory in the root of your starter code repo. -->
     </body>
