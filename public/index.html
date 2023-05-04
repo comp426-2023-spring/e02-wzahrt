@@ -1,12 +1,67 @@
 <html>
     <head>
-        <title>Rock</title>
+        <title>ROCK PAPER SCISSORS</title>
         <!-- Link to your script file(s) and CSS in here somewhere -->
+        <script src="./scripts.js"></script>
+        <link rel="stylesheet" href="./styles.css">
     </head>
     <body>
+        <h1>Play Rock Paper Scissors!</h1>
+        <div class = "row">
+        <div class = "first">
+        <h2>Original RPS</h2>
+        <label class="switch">
+            <input id ="OG" type="checkbox" onChange="toggle()">
+            <span class="slider"></span>
+        </label>
+        </div>
+    
+        <div>
+        <h2>New RPSLS</h2>
+        <label class="switch">
+            <input id = "NEW" type="checkbox" onChange="toggle()">
+            <span class="slider"></span>
+        </label>
+        </div>
+        </div>
+        
+        <div></div>
 
+        <div></div>
+        <h2>Against Opponent?</h2>
+        <label class="switch">
+            <input type="checkbox">
+            <span class="slider"></span>
+        </label>    
+
+        <div id="ogRPS">
+        <form action="/action_page.php">
+            <label for="shot">Choose a Shot:</label>
+            <select name="shot" id="shot">
+              <option value="rock">ROCK</option>
+              <option value="paper">PAPER</option>
+              <option value="scissors">SCISSORS</option>
+            </select>
+            <br><br>
+            <input type="submit" value="Submit">
+        </form>
+        </div>
+
+        <div id="RPSLS">
+            <form action="/action_page.php">
+                <label for="shot">Choose a Shot:</label>
+                <select name="shot" id="shot">
+                  <option value="rock">ROCK</option>
+                  <option value="paper">PAPER</option>
+                  <option value="scissors">SCISSORS</option>
+                  <option value="lizard">LIZARD</option>
+                  <option value="spock">SPOCK</option>
+                </select>
+                <br><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
     <!-- Your interface markup goes here -->
     <!-- For interface examples, look in the `/examples/` directory in the root of your starter code repo. -->
-
     </body>
 </html>
