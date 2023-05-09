@@ -105,6 +105,7 @@
     
     if (rps) {
       if (shot && againstOpponent) {
+        console.log(shot)
         const response = await fetch(`/app/rps/play/${shot}`);
         const data = await response.json();
   
@@ -116,6 +117,8 @@
       } else {
         const response = await fetch(`/app/rps/play`);
         const data = await response.json();
+        opponent.innerHTML = `Opponent: ${data.player}.`
+        pop_up.style.display = 'inline'
         console.log(data);
       }
     } else {
@@ -130,6 +133,8 @@
       } else {
         const response = await fetch(`/app/rpsls/play`);
         const data = await response.json();
+        opponent.innerHTML = `Opponent: ${data.player}.`
+        pop_up.style.display = 'inline'
         console.log(data);
       }
     }    
