@@ -40,36 +40,35 @@
             <div class="rule-set">
                 <p class="version">Rules for Classic Rock Paper Scissors</p>
                 <ul class="info">
-                    <li>Scissors CUTS Paper -> Winner: Scissors</li>
-                    <li>Paper COVERS Rock -> Winner: Paper</li>
-                    <li>Rock CRUSHES Scissors -> Winner: Rock</li>
+                    <li>Scissors CUTS Paper -&gt; Winner: Scissors</li>
+                    <li>Paper COVERS Rock -&gt; Winner: Paper</li>
+                    <li>Rock CRUSHES Scissors -&gt; Winner: Rock</li>
                 </ul>
             </div>
             <div>
                 <p class="version">Rules for the Lizard-Spock Expansion Pack</p>
                 <ul class="info">
-                    <li>Scissors CUTS Paper -> Winner: Scissors</li>
-                    <li>Paper COVERS Rock -> Winner: Paper</li>
-                    <li>Rock SMOOSHES Lizard -> Winner: Rock</li>
-                    <li>Lizard POISONS Spock -> Winner: Lizard</li>
-                    <li>Spock SMASHES Scissors -> Winner: Spock</li>
-                    <li>Scissors DECAPITATES Lizard -> Winner: Scissors</li>
-                    <li>Lizard EATS Paper -> Winner: Lizard</li>
-                    <li>Paper DISPROVES Spock -> Winner: Paper</li>
-                    <li>Spock VAPORIZES Rock -> Winner: Spock</li>
-                    <li>Rock CRUSHES Scissors -> Winner: Rock</li>
+                    <li>Scissors CUTS Paper -&gt; Winner: Scissors</li>
+                    <li>Paper COVERS Rock -&gt; Winner: Paper</li>
+                    <li>Rock SMOOSHES Lizard -&gt; Winner: Rock</li>
+                    <li>Lizard POISONS Spock -&gt; Winner: Lizard</li>
+                    <li>Spock SMASHES Scissors -&gt; Winner: Spock</li>
+                    <li>Scissors DECAPITATES Lizard -&gt; Winner: Scissors</li>
+                    <li>Lizard EATS Paper -&gt; Winner: Lizard</li>
+                    <li>Paper DISPROVES Spock -&gt; Winner: Paper</li>
+                    <li>Spock VAPORIZES Rock -&gt; Winner: Spock</li>
+                    <li>Rock CRUSHES Scissors -&gt; Winner: Rock</li>
                 </ul>
             </div>
-            <button class="close-button" onclick="closeRules()">Close Rules</button>
+            <button type="submit" close-button" onclick="closeRules()">Close Rules</button>
         </div>
-        
-        <div class="againstButton"> 
+        <div class="againstButton">
         <div class="againstOpponent">
         <h2>Against Opponent?</h2>
         <label class="switch">
             <input type="checkbox" onchange="toggle_against_opponent()">
             <span class="slider"></span>
-        </label>    
+        </label>
         </div>
         </div>
 
@@ -84,7 +83,7 @@
               <option value="spock" class="rpsls">SPOCK</option>
             </select>
             <br><br>
-            <button class="play-button" onclick="play()">Throw!</button>
+            <button type="submit" class="play-button" onclick="play()">Throw!</button>
         </div>
         </div>
 
@@ -95,7 +94,7 @@
                 <p id="player" class="result-item"></p>
                 <p id="opponent" class="result-item"></p>
                 <p id="result" class="result-item"></p>
-                <button class="reset-button" onclick="reset()">RESET</button>
+                <button type="submit" class="reset-button" onclick="reset()">RESET</button>
             </div>
         </div>
 
