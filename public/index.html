@@ -9,31 +9,28 @@
     <body>
         <h1>Play Rock Paper Scissors!</h1>
 
-        <div class = "row">
-        <div class = "first">
+        <div class="row">
+        <div class="first">
         <h2>Original RPS</h2>
         <label class="switch">
-            <input type="checkbox" onChange="toggleOG()">
+            <input type="checkbox" onchange="toggleOG()">
             <span class="slider"></span>
         </label>
         </div>
-    
-        <div class = "second">
+        <div class="second">
             <h2>Rules</h2>
-            <button class="open-button" onclick="openRules()">Open Rules</button>
-            </label>
+            <button type="submit" class="open-button" onclick="openRules()">Open Rules</button>
         </div>
 
-        <div class = "three">
+        <div class="three">
             <h2>Start Over!</h2>
-            <button class="reset-button" onclick="reset()">RESET</button>
-            </label>
+            <button type="submit" class="reset-button" onclick="reset()">RESET</button>
         </div>
 
         <div>
         <h2>New RPSLS</h2>
         <label class="switch">
-            <input type="checkbox" onChange="toggleNew()">
+            <input type="checkbox" onchange="toggleNew()">
             <span class="slider"></span>
         </label>
         </div>
@@ -70,7 +67,7 @@
         <div class="againstOpponent">
         <h2>Against Opponent?</h2>
         <label class="switch">
-            <input type="checkbox" onChange="toggle_against_opponent()">
+            <input type="checkbox" onchange="toggle_against_opponent()">
             <span class="slider"></span>
         </label>    
         </div>
